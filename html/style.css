@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #aaa;
+  z-index: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  height: 6%;
+  width: 100%;
+  background-color: #c7243a;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.main {
+  display: flex;
+  height: 94%;
+  width: 100%;
+  background-color: #aaa;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 94%;
+  width: 94%;
+  background-color: #007ab7;
+}
