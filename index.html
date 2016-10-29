@@ -1,50 +1,65 @@
 <!DOCTYPE HTML>
 <html>
 
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="css/style0.css"/>
-        <link rel="icon" type="image/x-icon" href="image/ninja.ico">
-        <link rel="manifest" href="/manifest.json">
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9kqomio_l4ytTUAhQnF307MXlAZRDxoQ"></script>
-        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript" src="js/web.js"></script>
-        <script type="text/javascript" src="js/velocity.min.js"></script>
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
-        <title>GO🍚</title>
-    </head>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="icon" type="image/x-icon" href="image/ninja.ico">
+	<link rel="manifest" href="/manifest.json">
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9kqomio_l4ytTUAhQnF307MXlAZRDxoQ"></script>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/web.js"></script>
+	<script type="text/javascript" src="js/velocity.min.js"></script>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<title>GO🍚</title>
+</head>
 
-    <body>
-        <div class="main">
+<body>
+	<div class="main">
 
-            <div class="container">
-                <div class="headline">
-                    <div class="block sblock">
-                        <p id="time" class="moji">
-                            到着まで<br>12時間25分
-                        </p>
-                    </div>
-                    <div class="block bblock">
-                        <img class="conpass conpasss" src="svg_minified/arrowshadow.svg" style="top:20px;" alt=""/>
-                        <img class="conpass" src="svg_minified/arrow.svg" alt=""/>
-                    </div>
-                    <div class="block sblock">
-                        <p class="moji">
-                            距離<br>
-                            100m
-                        </p>
-                    </div>
-                </div>
+		<div id="first" class="container">
+			<div class="headline">
+				<div class="block sblock">
+					<p id="time" class="moji">
+						到着まで<br>12時間25分
+					</p>
+				</div>
+				<div class="block bblock">
+					<img class="conpass conpasss" src="svg_minified/arrowshadow.svg" style="top:20px;" alt="" />
+					<img class="conpass" src="svg_minified/arrow.svg" alt="" />
+				</div>
+				<div class="block sblock">
+					<p class="moji">
+						距離<br> 100m
+					</p>
+				</div>
+			</div>
+			<div class="mapdiv">
+				<div id="map"></div>
+			</div>
+		</div>
 
-                <div class="mapdiv">
-                    <div id="map"></div>
-                </div>
+		<div id="second" class="container">
+			<div class="headline">
+				<div class="block hblock">
+					<p id="time" class="moji">
+						目的地を変更する
+					</p>
+				</div>
+				<div class="block hblock">
+					<p id="time" class="moji">
+						変更！
+					</p>
+				</div>
+			</div>
+			<div class="mapdiv">
+				<div id="map2"></div>
+			</div>
+		</div>
 
-            </div>
-        </div>
+	</div>
 
-    </body>
+</body>
 
 </html>
